@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: customer_gold
+    description: "Current active customer dimension for analytics and reporting."
+
+    columns:
+
+      - name: customer_id
+        description: "Customer identifier."
+        tests:
+          - not_null
+
+      - name: customer_name
+        description: "Customer full name."
+
+      - name: first_name
+        description: "Customer first name."
+
+      - name: last_name
+        description: "Customer last name."
+
+      - name: email
+        description: "Customer email."
+
+      - name: phone
+        description: "Customer phone."
+
+      - name: account_name
+        description: "Account name."
+
+      - name: mailing_street
+        description: "Street."
+
+      - name: mailing_city
+        description: "City."
+
+      - name: mailing_state
+        description: "State."
+
+      - name: mailing_country
+        description: "Country."
+
+      - name: customer_status
+        description: "Customer status."
+
+      - name: loyalty_points
+        description: "Current loyalty points."
+
+      - name: effective_start_date
+        description: "Current record start timestamp."
+
+      - name: effective_end_date
+        description: "Current record end timestamp."
+
+      - name: is_current
+        description: "Current active customer flag."

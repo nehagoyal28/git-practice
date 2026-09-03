@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Cleaned and standardized customer data from Salesforce Bronze layer."
+
+    columns:
+
+      - name: customer_id
+        description: "Unique customer identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: first_name
+        description: "Customer first name."
+
+      - name: last_name
+        description: "Customer last name."
+
+      - name: customer_name
+        description: "Customer full name."
+
+      - name: email
+        description: "Customer email address."
+
+      - name: phone
+        description: "Customer phone number."
+
+      - name: account_name
+        description: "Salesforce account name."
+
+      - name: mailing_street
+        description: "Customer mailing street."
+
+      - name: mailing_city
+        description: "Customer city."
+
+      - name: mailing_state
+        description: "Customer state."
+
+      - name: mailing_country
+        description: "Customer country."
+
+      - name: customer_status
+        description: "Customer status."
+
+      - name: loyalty_points
+        description: "Customer loyalty points."
+
+      - name: created_date
+        description: "Customer creation timestamp."
+
+      - name: last_activity_date
+        description: "Last customer activity timestamp."

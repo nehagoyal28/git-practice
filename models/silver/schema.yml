@@ -1,0 +1,64 @@
+version: 2
+
+models:
+  - name: customer_stage
+    description: "Current transformed customer data used as input for the SCD Type 2 merge process."
+
+    columns:
+
+      - name: customer_id
+        description: "Business key of the customer."
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        description: "Customer full name."
+
+      - name: first_name
+        description: "Customer first name."
+
+      - name: last_name
+        description: "Customer last name."
+
+      - name: email
+        description: "Customer email."
+
+      - name: phone
+        description: "Customer phone."
+
+      - name: account_name
+        description: "Salesforce account."
+
+      - name: mailing_street
+        description: "Street."
+
+      - name: mailing_city
+        description: "City."
+
+      - name: mailing_state
+        description: "State."
+
+      - name: mailing_country
+        description: "Country."
+
+      - name: customer_status
+        description: "Customer status."
+
+      - name: loyalty_points
+        description: "Loyalty points."
+
+      - name: created_date
+        description: "Customer created date."
+
+      - name: last_activity_date
+        description: "Last activity."
+
+      - name: effective_start_date
+        description: "Record effective start timestamp."
+
+      - name: effective_end_date
+        description: "Record effective end date."
+
+      - name: is_current
+        description: "Current active record flag."

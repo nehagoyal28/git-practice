@@ -1,0 +1,57 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: ecommerce_catalog
+    schema: bronze
+
+    tables:
+      - name: customers_salesforce
+        description: Salesforce Customer Raw Data
+
+        columns:
+
+          - name: Id
+            description: Customer Id
+
+          - name: FirstName
+            description: Customer First Name
+
+          - name: LastName
+            description: Customer Last Name
+
+          - name: Name
+            description: Customer Full Name
+
+          - name: Email
+            description: Customer Email
+
+          - name: Phone
+            description: Customer Phone Number
+
+          - name: AccountName
+            description: Salesforce Account Name
+
+          - name: MailingCity
+            description: Customer City
+
+          - name: MailingState
+            description: Customer State
+
+          - name: MailingCountry
+            description: Customer Country
+
+          - name: CustomerStatus
+            description: Active or Inactive Customer
+
+          - name: LoyaltyPoints
+            description: Customer Loyalty Points
+
+          - name: CreatedDate
+            description: Customer Creation Date
+
+          - name: LastActivityDate
+            description: Last Customer Activity
+
+          - name: MailingStreet
+            description: Customer Street Address
